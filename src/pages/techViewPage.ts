@@ -6,7 +6,7 @@ const { randomValuePasscode } = require('../helper/util/test-data/randomdata');
 const { randomName } = require('../helper/util/test-data/randomdata');
 
 
-export default class dgAlarmPortal {
+export default class techViewPage {
     private base: PlaywrightWrapper
     constructor(private page: Page) {
         this.base = new PlaywrightWrapper(page);

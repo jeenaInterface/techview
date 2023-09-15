@@ -1,19 +1,19 @@
  Feature: Verify whether the contact is updated  properly when the APM checkbox is disabled.
 
 
-@APMDisEnabled
-  Scenario: Uncheck the apm status checkbox in oracle
-    When User navigates to the oracle application
-    When User enter the username
-    When User enter the password
+@Oneview
+  Scenario: Select scheduled work orderID from Oneview
+    Given User navigates to the Oneview application
+    Given User enter the username
+    Given User enter the password
     When User click on the login button
-    When Search Dollar General Dg23781
-    When Click on Profile Tab
-    When Uncheck on APM checkbox
-    When Click on Save
+    When Change the Company
+    When Click on service trips
+    When Filter scheduled work orders
+    When Select first work order
     
 @APMDisEnabled1
-  Scenario: UPDATE A CONTACT IN DG ALARM PORTAL (DG-TEST2)
+  Scenario: Analyze the work order details in OneView
     When User navigates to the dgAlarmPortal application
     When Search a site
     When Click on Alarm Panel Code Change Request
